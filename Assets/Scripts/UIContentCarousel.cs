@@ -280,7 +280,7 @@ public class UIContentCarousel : MonoBehaviour, IEndDragHandler, IBeginDragHandl
         }
     }
 
-    private void MoveToPreviousPage()
+    public void MoveToPreviousPage()
     {
         if (infiniteLooping)
         {
@@ -294,7 +294,7 @@ public class UIContentCarousel : MonoBehaviour, IEndDragHandler, IBeginDragHandl
         }
     }
 
-    private void MoveToNextPage()
+    public void MoveToNextPage()
     {
         if (infiniteLooping)
         {
@@ -330,5 +330,10 @@ public class UIContentCarousel : MonoBehaviour, IEndDragHandler, IBeginDragHandl
                 dotImage.color = Color.Lerp(dotImage.color, targetColor, Time.deltaTime * dotColorTransitionSpeed);
             }
         }
+    }
+
+    public void fuck()
+    {
+        Debug.Log("Fuck");
     }
 }
